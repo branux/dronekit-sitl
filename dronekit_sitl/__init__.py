@@ -265,7 +265,7 @@ class SITL():
             args.extend(['-I', str(self.instance)])
 
         if speedup is not None:
-            args.extend(['-S', str(speedup)])
+            args.extend(['--speedup', str(speedup)])
 
         # Run pysim
         if self.using_sim:
